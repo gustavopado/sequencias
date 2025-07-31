@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="pt-br"> <!-- Página em português -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Suporte a acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta para celulares -->
+    <title>Contador</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS -->
 </head>
 <body>
     <header>
-        <h1>Contador</h1>
+        <h1>Contador</h1> <!-- Título principal -->
     </header>
     <section>
         <div>
+            <!-- Campos de entrada numéricos -->
             Início: <input type="number" id="start"><br>
             Fim: <input type="number" id="end"><br>
             Passo: <input type="number" id="step"><br>
+            <!-- Botão que chama a função contar() -->
             <button onclick="contar()">Contar</button>
         </div>
-        <div id="result"></div>
-        <canvas id="canvas" width="500" height="200"></canvas>
+
+        <div id="result"></div> <!-- Onde será exibido o resultado -->
+        <canvas id="canvas" width="500" height="200"></canvas> <!-- Área gráfica -->
     </section>
+
     <footer>
         <p>Exemplo de Contador</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
 </body>
 </html>
